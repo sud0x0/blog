@@ -13,11 +13,6 @@ clean:
 	rm .jekyll-metadata
 	rm -rf .jekyll-cache
 
-
-### INFO ###
-# In Mac: first init and start a linux VM.
-# For other environments, you will have to check podman documentation. 
-# podman machine init
-# podman machine start
-# podman machine stop
-# podman machine rm <machine-name>
+# Make sure to add docker before make run. Tested in Ubuntu
+# sudo vim /etc/containers/registries.conf
+# unqualified-search-registries = ["docker.io"]
